@@ -1,0 +1,47 @@
+@use "./../base/variables" as v;
+
+.profesionals-contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+
+    p {
+        line-height: 2;
+        font-size: 3.5rem;
+        color: v.$fondo-secundario;
+        text-align: justify;
+    }
+}
+
+.profesionals-formulario {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+
+    .campo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+
+        label {
+            color: v.$color-fuente-principal;
+            font-size: 1.7rem;
+        }
+
+        input {
+            border: none;
+            border-radius: 1rem;
+            font-size: 1.7rem;
+            outline: none;
+            padding: .7rem .9rem;
+            transition: outline .1s ease-in-out;
+
+            &:focus {
+                outline: 4px solid lighten(v.$fondo-secundario, 25);
+            }
+        }
+    }
+}
