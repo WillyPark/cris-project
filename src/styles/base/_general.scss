@@ -1,0 +1,52 @@
+@use "./variables" as v;
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.contenedor {
+    max-width: 1200px;
+    width: 100vw;
+    margin: 0 auto;
+}
+
+.contenedor-contenido-principal {
+    // background-color: v.$fondo-principal;
+    background: rgb(245, 103, 14);
+    background: linear-gradient(225deg, rgba(245, 103, 14, 1) 50%, rgba(249, 199, 167, 1) 100%);
+    //TODO: Cuando cambie de tamaño el menu, cambiar los valores de la altura y margen
+    height: calc(100vh - 123px);
+    margin-top: 123px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.activo {
+    color: v.$fondo-principal !important;
+}
+
+.activo-claro {
+    color: lighten(v.$fondo-principal, $amount: 20)
+}
+
+.height-aux {
+    height: 123px;
+}

@@ -1,0 +1,30 @@
+@use "./../base/variables" as v;
+
+.header {
+    align-items: center;
+    display: flex;
+    gap: 10rem;
+    justify-content: center;
+    width: 100%;
+
+    h1 {
+        color: v.$fondo-secundario;
+        font-size: 4rem;
+    }
+
+    // .header__llave {
+    //     color: v.$color-fuente-principal;
+    //     font-size: 35rem;
+    //     font-weight: normal;
+    //     margin-top: 28rem;
+    // }
+
+    .header__contenido {
+        align-items: left;
+        color: v.$color-fuente-principal;
+        display: flex;
+        flex-direction: column;
+        font-size: 2rem;
+        justify-content: center;
+    }
+}

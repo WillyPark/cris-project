@@ -1,0 +1,75 @@
+@use "./../base/variables" as v;
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    background-color: v.$fondo-secundario;
+    width: 100%;
+    position: absolute;
+    top: 0;
+
+    .navbar__logo-contenedor {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar__logo {
+        width: 10rem;
+        height: 8rem;
+    }
+
+    .navbar__logo-texto {
+        font-size: 3rem;
+        margin-left: -1.5rem;
+    }
+
+    .navbar__menu-fondo {
+        background-color: v.$color-fuente-principal;
+    }
+
+    .navbar__menu-contenedor {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: fit-content;
+
+        ul {
+            margin: 0;
+        }
+    }
+
+    .navbar__submenu {
+        align-items: center;
+        color: white;
+        display: flex;
+        gap: 3rem;
+        font-size: 2rem;
+        justify-content: flex-end;
+        padding: 1rem 0;
+    }
+
+    .navbar__menu {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 2rem;
+    }
+
+    .navbar__menu-item {
+        color: black;
+        font-size: 2rem;
+        padding: .7rem 1rem 0;
+        transition: border-top .1s ease-in-out;
+
+        &:hover {
+            border-top: v.$fondo-principal 4px solid;
+        }
+
+        //TODO: Verificar que después no corrompa el diseño
+        &:last-child {
+            margin-right: 1.5rem;
+        }
+    }
+}
