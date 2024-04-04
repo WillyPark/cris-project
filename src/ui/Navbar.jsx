@@ -12,7 +12,7 @@ export const Navbar = () => {
             <div className="navbar__menu-fondo">
                 <div className="contenedor navbar__menu-contenedor">
                     <NavLink to="/" className="navbar__logo-contenedor">
-                        <img className="navbar__logo" src="/src/assets/logo.webp" alt="Logo"></img>
+                        <img className="navbar__logo" src="./img/logo.webp" alt="Logo"></img>
                         <span className="navbar__logo-texto">CRAs back-Up</span>
                     </NavLink>
 
