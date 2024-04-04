@@ -1,5 +1,7 @@
 export const Services = () => {
     return (
-        <div>Services</div>
+        <main className="fadeOut">
+            <h1>Services</h1>
+        </main>
     )
 }

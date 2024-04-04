@@ -1,7 +1,10 @@
 export const Footer = () => {
     return (
-        <div>
-            <h1>Footer</h1>
-        </div>
+        <footer className="footer">
+            <div className="contenedor">
+                <div className="footer__linea"></div>
+                <p>CRAs back-up &copy; 2023</p>
+            </div>
+        </footer>
     )
 }

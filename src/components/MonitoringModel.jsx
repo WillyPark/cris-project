@@ -1,5 +1,7 @@
 export const MonitoringModel = () => {
     return (
-        <div>MonitoringModel</div>
+        <main className="fadeOut">
+            <h1>Monitoring Model</h1>
+        </main>
     )
 }
