@@ -1,0 +1,15 @@
+@use "./../base/variables" as v;
+
+.contact-contenedor {
+    align-items: center;
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+        color: v.$fondo-secundario;
+        font-size: 4.2rem;
+        margin-top: 0;
+    }
+}

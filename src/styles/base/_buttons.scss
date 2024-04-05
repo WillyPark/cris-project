@@ -1,0 +1,13 @@
+@use "./mixins" as m;
+@use "./variables" as v;
+
+.btn-submit {
+    @include m.boton(v.$fondo-secundario, v.$blanco);
+    margin-top: 2.5rem;
+}
+
+@include m.tablet {
+    .btn-submit {
+        width: 30%;
+    }
+}

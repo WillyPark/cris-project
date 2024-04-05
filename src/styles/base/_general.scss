@@ -12,6 +12,22 @@ html {
     box-sizing: inherit;
 }
 
+main {
+    padding: 4rem 0;
+}
+
+section {
+    padding: 4rem 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
 .contenedor {
     max-width: 1200px;
     width: 100vw;
@@ -23,20 +39,13 @@ html {
     background: rgb(245, 103, 14);
     background: linear-gradient(225deg, rgba(245, 103, 14, 1) 50%, rgba(249, 199, 167, 1) 100%);
     //TODO: Cuando cambie de tamaño el menu, cambiar los valores de la altura y margen
-    height: calc(100vh - 123px);
-    margin-top: 123px;
+    // margin-top: 123px;
+
+    min-height: calc(100vh - 123px);
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-}
-
-li {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
 }
 
 .activo {
