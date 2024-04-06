@@ -34,7 +34,7 @@ export const Contact = () => {
                     <input type="text" placeholder="Any comments" id="comment" name="comment" />
                 </div>
 
-                <button className="btn-submit" type="submit" disabled>Enviar</button>
+                <button className="btn-submit" type="submit" disabled>Send</button>
             </form>
         </main>
     )

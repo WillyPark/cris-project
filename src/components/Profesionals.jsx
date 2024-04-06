@@ -36,10 +36,12 @@ export const Profesionals = () => {
                             <input type="text" placeholder="Any comments" id="comment" name="comment" />
                         </div>
 
-                        <button className="btn-submit" type="submit" disabled>Enviar</button>
+                        <button className="btn-submit" type="submit" disabled>Send</button>
                     </form>
                 </div>
             </main>
+
+            <div className="section-aux"></div>
 
             <section className="profesionals-contenedor">
                 <form action="" className="profesionals-formulario" method="POST">
@@ -73,7 +75,7 @@ export const Profesionals = () => {
                         <input type="text" placeholder="Any comments" id="comment" name="comment" />
                     </div>
 
-                    <button className="btn-submit" type="submit" disabled>Enviar</button>
+                    <button className="btn-submit" type="submit" disabled>Send</button>
                 </form>
 
                 <p>Do you want to join in our <strong>CRA trainee program?</strong></p>
