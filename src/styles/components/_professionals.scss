@@ -12,36 +12,3 @@
         text-align: justify;
     }
 }
-
-.profesionals-formulario {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    justify-content: center;
-
-    .campo {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 90%;
-
-        label {
-            color: v.$color-fuente-principal;
-            font-size: 1.7rem;
-        }
-
-        input {
-            border: none;
-            border-radius: .8rem;
-            font-size: 1.7rem;
-            outline: none;
-            padding: .7rem .9rem;
-            transition: outline .1s ease-in-out;
-
-            &:focus {
-                outline: 3px solid lighten(v.$fondo-secundario, 10);
-            }
-        }
-    }
-}

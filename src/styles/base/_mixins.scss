@@ -13,22 +13,23 @@
 }
 
 @mixin boton($bgColor, $colorTexto ) {
-    background-color: $bgColor;
-    padding: 1rem 3.4rem;
+    background-image: linear-gradient(132deg, #1b2f54 -3.62%, #1b3055 9.38%, #1b3157 19.95%, #1b345a 28.48%, #1b385e 35.33%, #1b3c62 40.88%, #1b4168 45.49%, #1b466e 49.55%, #1b4c74 53.43%, #1b527b 57.49%, #1a5982 62.1%, #1a5f89 67.65%, #1a6590 74.5%, #1a6b97 83.03%, #1a719d 93.6%, #1a76a3 106.6%);
+    padding: 1.3rem 3.4rem;
     color: $colorTexto;
     font-size: 1.7rem;
     font-weight: 700;
     border: none;
-    border-radius: 1.5rem;
-    transition-property: background-color;
-    transition-duration: .3s;
+    border-radius: 2rem;
+    transition: background .3s;
+    background-size: 100% 100%;
     text-align: center;
     width: 100%;
     display: inline-block;
 
     &:hover,
     &.active {
-        background-color: darken($bgColor, 10%);
+        background-position: 100% 0%;
+        background-size: 100% 400%;
         cursor: pointer;
     }
 }

@@ -1,5 +1,5 @@
-import { Outlet } from "react-router-dom"
-import { Navbar, Footer } from "./ui"
+import { Outlet } from "react-router-dom";
+import { Navbar, Footer } from "./ui";
 
 const App = () => {
   return (
