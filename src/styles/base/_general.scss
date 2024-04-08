@@ -29,7 +29,7 @@ a {
 }
 
 .contenedor {
-    max-width: 1200px;
+    max-width: 1400px;
     width: 100vw;
     margin: 0 auto;
 }
@@ -39,13 +39,15 @@ a {
     background: rgb(245, 103, 14);
     background: linear-gradient(225deg, rgba(245, 103, 14, 1) 50%, rgba(249, 199, 167, 1) 100%);
     //TODO: Cuando cambie de tamaño el menu, cambiar los valores de la altura y margen
-    // margin-top: 123px;
-
     min-height: calc(100vh - 123px);
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
+}
+
+.height-aux {
+    height: 123px;
 }
 
 .activo {
@@ -54,10 +56,6 @@ a {
 
 .activo-claro {
     color: lighten(v.$fondo-principal, $amount: 20)
-}
-
-.height-aux {
-    height: 123px;
 }
 
 .section-aux {

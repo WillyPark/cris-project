@@ -1,7 +1,9 @@
 export const Services = () => {
     return (
-        <main className="fadeOut">
-            <h1>Services</h1>
-        </main>
+        <div className="contenedor-contenido-principal">
+            <main className="contenedor fadeOut">
+                <h1>Services</h1>
+            </main>
+        </div>
     )
 }

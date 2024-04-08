@@ -1,7 +1,9 @@
 export const MonitoringModel = () => {
     return (
-        <main className="fadeOut">
-            <h1>Monitoring Model</h1>
-        </main>
+        <div className="contenedor-contenido-principal">
+            <main className="contenedor fadeOut">
+                <h1>Monitoring Model</h1>
+            </main>
+        </div>
     )
 }
