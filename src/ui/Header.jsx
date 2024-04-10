@@ -1,8 +1,15 @@
+import { useContext } from "react";
+import { LanguageContext } from "../context/LanguageContext";
+
 export const Header = () => {
+    const { lenguaje } = useContext(LanguageContext);
+    console.log(lenguaje);
+
     return (
         <div className="contenedor-contenido-principal">
             <header className="contenedor header fadeOut">
-                <h1>The Highest Eficience in Monitoring Field</h1>
+                <h1>{lenguaje.header.title}</h1>
+                {/* <h1>Monitorgi</h1> */}
 
                 {/* <p className="header__llave">&#123;</p> */}
 
