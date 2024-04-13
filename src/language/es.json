@@ -1,19 +1,83 @@
 {
-    "navBar": [
-        "Modelo de Monitoreo",
-        "Servicios",
-        "Profesionales",
-        "Contáctanos"
-    ],
+    "navBar": {
+        "menu": [
+            [
+                "monitoring-model",
+                "Modelo de Seguimiento"
+            ],
+            [
+                "services",
+                "Servicios"
+            ],
+            [
+                "profesionals",
+                "Profesionales"
+            ],
+            [
+                "contact",
+                "Contáctenos"
+            ]
+        ],
+        "subMenu": [
+            "Contacto para nuevos clientes",
+            "Regiones"
+        ]
+    },
     "header": {
-        "title": "La Más Alta Eficiencia en Modelos",
+        "title": "La Más Alta Eficiencia en el Campo de Monitoreo",
         "list": [
-            "100% Deliverables",
+            "100% Entregables",
             "100% Fit on you MP",
             "Up to 80% saving money",
             "Up to 70% saving time",
             "Up to 60% les queries",
             "Up to 50% less CRA handovers"
         ]
+    },
+    "monitoring": {
+        "title": "Modelo de Monitoreo"
+    },
+    "services": {
+        "title": "Servicios"
+    },
+    "profesionals": {
+        "title": [
+            "¿Ya tienes un",
+            "CRA",
+            "queriendo",
+            "ser mejor profesional",
+            "colaborando con nosotros?"
+        ],
+        "subTitle": [
+            "¿Quieres entrar a nuestro",
+            "programa de becario de CRA?"
+        ]
+    },
+    "contact": {
+        "title": "¿Cuándo quieres que iniciemos?"
+    },
+    "form": {
+        "company": [
+            "Compañia",
+            "Nombre de su Compañia"
+        ],
+        "email": [
+            "Correo electrónico",
+            "Su correo electrónico"
+        ],
+        "emailConfirm": [
+            "Su correo de nuevo para verificación",
+            "Su correo de nuevo"
+        ],
+        "phone": [
+            "Teléfono",
+            "Su número telefónico"
+        ],
+        "date": "Tiempo esperado para la incorporación de su estudio",
+        "comments": [
+            "Comentarios",
+            "Cualquier comentario"
+        ],
+        "button": "Enviar"
     }
 }

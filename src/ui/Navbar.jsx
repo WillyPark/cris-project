@@ -1,12 +1,33 @@
+import { useContext } from "react";
 import { NavLink } from "react-router-dom";
+import { LanguageContext } from "../context/LanguageContext";
 
 export const Navbar = () => {
+    const { setLang, language } = useContext(LanguageContext);
+
+    const onChangeLanguage = (e) => {
+        const value = e.target.value;
+
+        if (value == "eng" || value == "esp") {
+            setLang(value);
+        }
+    }
+
     return (
         <nav className="navbar">
             <ul className="navbar__submenu contenedor">
-                <li>Contact for new Clients</li>
-                <li className="activo-claro">Regions</li>
-                <li className="activo-claro">Languages</li>
+                {
+                    <li>{language.navBar.subMenu[0]}</li>
+                }
+                {
+                    <li className="activo-claro">{language.navBar.subMenu[1]}</li>
+                }
+                <li className="activo-claro">
+                    <select onChange={onChangeLanguage} name="language" id="language">
+                        <option value="eng">English</option>
+                        <option value="esp">Español</option>
+                    </select>
+                </li>
             </ul>
 
             <div className="navbar__menu-fondo">
@@ -15,17 +36,20 @@ export const Navbar = () => {
                         <img className="navbar__logo" src="./img/logo.webp" alt="Logo"></img>
                         <span className="navbar__logo-texto">CRAs back-Up</span>
                     </NavLink>
-
                     <ul className="navbar__menu">
-                        <li>
-                            <NavLink
-                                to="monitoring-model"
-                                className={({ isActive }) => `navbar__menu-item ${isActive ? "activo" : ""}`}
-                            >
-                                Monitoring Model
-                            </NavLink>
-                        </li>
-
+                        {
+                            language.navBar.menu.map((element, i) => {
+                                return <li key={i}>
+                                    <NavLink
+                                        to={element[0]}
+                                        className={({ isActive }) => `navbar__menu-item ${isActive ? "activo" : ""}`}
+                                    >
+                                        {element[1]}
+                                    </NavLink>
+                                </li>
+                            })
+                        }
+                        {/* 
                         <li>
                             <NavLink
                                 to="services"
@@ -51,7 +75,7 @@ export const Navbar = () => {
                             >
                                 Contact us
                             </NavLink>
-                        </li>
+                        </li> */}
                     </ul>
                 </div>
             </div>

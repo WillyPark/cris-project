@@ -1,12 +1,18 @@
+import { useContext } from "react";
 import { Form } from "./Form";
+import { LanguageContext } from "../context/LanguageContext";
 
 export const Profesionals = () => {
+    const { language } = useContext(LanguageContext);
+    const titulo = language.profesionals.title;
+    const subtitulo = language.profesionals.subTitle;
+
     return (
         <>
             <div className="contenedor-contenido-principal">
                 <main className="contenedor fadeOut">
                     <div className="profesionals-contenedor">
-                        <p>You are already a <strong>CRA</strong> wanting <strong>to be better profesional</strong> by collaborating with us?</p>
+                        <p>{titulo[0]} <strong>{titulo[1]}</strong> {titulo[2]} <strong>{titulo[3]}</strong> {titulo[4]}</p>
 
                         <Form tipo={1} />
                     </div>
@@ -19,7 +25,7 @@ export const Profesionals = () => {
                 <section className="contenedor profesionals-contenedor">
                     <Form tipo={2} />
 
-                    <p>Do you want to join in our <strong>CRA trainee program?</strong></p>
+                    <p>{subtitulo[0]} <strong>{subtitulo[1]}</strong></p>
                 </section>
             </div>
         </>

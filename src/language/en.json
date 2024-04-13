@@ -1,10 +1,28 @@
 {
-    "navBar": [
-        "Monitorging Model",
-        "Services",
-        "Profesionals",
-        "Contact us"
-    ],
+    "navBar": {
+        "menu": [
+            [
+                "monitoring-model",
+                "Monitoring Model"
+            ],
+            [
+                "services",
+                "Services"
+            ],
+            [
+                "profesionals",
+                "Profesionals"
+            ],
+            [
+                "contact",
+                "Contact us"
+            ]
+        ],
+        "subMenu": [
+            "Contact for new Clients",
+            "Regions"
+        ]
+    },
     "header": {
         "title": "The Highest Eficiente in Monitoring Field",
         "list": [
@@ -15,5 +33,51 @@
             "Up to 60% les queries",
             "Up to 50% less CRA handovers"
         ]
+    },
+    "monitoring": {
+        "title": "Monitoring Model"
+    },
+    "services": {
+        "title": "Services"
+    },
+    "profesionals": {
+        "title": [
+            "You are already a",
+            "CRA",
+            "wanting",
+            "to be better profesional",
+            "by collaborating with us?"
+        ],
+        "subTitle": [
+            "Do you want to join in our",
+            "CRA trainee program?"
+        ]
+    },
+    "contact": {
+        "title": "When do you want us to start?"
+    },
+    "form": {
+        "company": [
+            "Company",
+            "Your Company"
+        ],
+        "email": [
+            "Email address",
+            "Your Email"
+        ],
+        "emailConfirm": [
+            "Your email again as verification",
+            "Yor email again"
+        ],
+        "phone": [
+            "Phone",
+            "Your phone number"
+        ],
+        "date": "Time expectation to onboarding in you study",
+        "comments": [
+            "Comments",
+            "Any comments"
+        ],
+        "button": "Send"
     }
 }
