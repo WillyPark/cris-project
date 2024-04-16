@@ -21,10 +21,18 @@
         "subMenu": [
             "Contacto para nuevos clientes",
             "Regiones"
-        ]
+        ],
+        "language": "Idiomas"
     },
     "header": {
-        "title": "La Más Alta Eficiencia en el Campo de Monitoreo",
+        "title": [
+            "La Más Alta",
+            "Eficiencia",
+            "en",
+            "Monitoreo",
+            "Clínico",
+            "de campo"
+        ],
         "list": [
             "100% Entregables",
             "100% Fit on you MP",
@@ -32,7 +40,25 @@
             "Up to 70% saving time",
             "Up to 60% les queries",
             "Up to 50% less CRA handovers"
-        ]
+        ],
+        "words": {
+            "uno": "Protocolo",
+            "dos": "Operación Clínica",
+            "tres": "Ensayos Clínicos",
+            "cuatro": "Dermatología",
+            "cinco": "Vacunas",
+            "seis": "Protocolo",
+            "siete": "Ensayos Clínicos",
+            "ocho": "Oftalmología",
+            "nueve": "Pediatría",
+            "diez": "Protocolo",
+            "once": "Oncología",
+            "doce": "Ortopedía",
+            "trece": "Neurología",
+            "catorce": "Gastroenterología",
+            "quince": "Psiquiatría",
+            "diesiseis": "Ginecología"
+        }
     },
     "monitoring": {
         "title": "Modelo de Monitoreo"

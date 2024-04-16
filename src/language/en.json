@@ -21,10 +21,18 @@
         "subMenu": [
             "Contact for new Clients",
             "Regions"
-        ]
+        ],
+        "language": "Languages"
     },
     "header": {
-        "title": "The Highest Eficiente in Monitoring Field",
+        "title": [
+            "Highest",
+            "Efficiency",
+            "in",
+            "Clinical",
+            "Monitoring",
+            "field"
+        ],
         "list": [
             "100% Deliverables",
             "100% Fit on you MP",
@@ -32,7 +40,25 @@
             "Up to 70% saving time",
             "Up to 60% les queries",
             "Up to 50% less CRA handovers"
-        ]
+        ],
+        "words": {
+            "uno": "Protocol",
+            "dos": "Clinical Operation",
+            "tres": "Clinical Trials",
+            "cuatro": "Dermatology",
+            "cinco": "Vaccines",
+            "seis": "Protocol",
+            "siete": "Clinical Trials",
+            "ocho": "Ophthalmology",
+            "nueve": "Pediatrics",
+            "diez": "Protocol",
+            "once": "Oncology",
+            "doce": "Orthopedics",
+            "trece": "Neurology",
+            "catorce": "Gastroenterology",
+            "quince": "Psychiatry",
+            "diesiseis": "Gynecology"
+        }
     },
     "monitoring": {
         "title": "Monitoring Model"

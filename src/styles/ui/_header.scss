@@ -11,7 +11,7 @@
         background: linear-gradient(to right, v.$fondo-secundario, lighten(v.$fondo-secundario, 15));
         color: transparent;
         background-clip: text;
-        font-size: 4.2rem;
+        font-size: 5.3rem;
     }
 
     // .header__llave {
@@ -21,16 +21,144 @@
     //     margin-top: 28rem;
     // }
 
+    .header__titulo {
+        text-align: right;
+
+        &--resaltado {
+            color: darken(v.$blanco, 5);
+        }
+    }
+
     .header__contenido {
-        // align-items: left;
         color: v.$blanco;
         display: flex;
         flex-direction: column;
-        font-size: 2.1rem;
+        font-size: 2.7rem;
         justify-content: center;
 
         p {
             margin: 1.8rem 0;
         }
+    }
+}
+
+.header-palabras {
+    width: 99%;
+    max-width: 1400px;
+    margin: 0 auto;
+
+    p {
+        margin: 0;
+        padding: 0;
+        font-size: 7.3rem;
+    }
+
+    .fila {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .header-palabras-uno {
+        color: lighten(v.$color-fuente-terciaria, 50);
+    }
+
+    .header-palabras-dos {
+        color: lighten(v.$color-fuente-terciaria, 75);
+        font-size: 8rem;
+        position: absolute;
+        left: 30%;
+        top: -25%;
+    }
+
+    .header-palabras-tres {
+        color: lighten(v.$color-fuente-terciaria, 60);
+        margin-left: 15%;
+        margin-top: -1.5rem;
+        font-size: 7.8rem;
+    }
+
+    .header-palabras-cuatro {
+        color: lighten(v.$color-fuente-terciaria, 53);
+        font-size: 6.7rem;
+        position: absolute;
+        left: 65%;
+        top: -18%;
+    }
+
+    .header-palabras-cinco {
+        color: lighten(v.$color-fuente-terciaria, 75);
+        font-size: 7.4rem;
+        margin-left: 2.5%;
+        margin-top: -2.5rem;
+    }
+
+    .header-palabras-seis {
+        color: lighten(v.$color-fuente-terciaria, 50);
+        font-size: 6.5rem;
+        position: absolute;
+        left: 35%;
+        top: 35%;
+    }
+
+    .header-palabras-siete {
+        color: lighten(v.$color-fuente-terciaria, 65);
+        margin-top: -1.5rem;
+        margin-right: 1%;
+    }
+
+    .header-palabras-ocho {
+        color: lighten(v.$color-fuente-terciaria, 60);
+        font-size: 8rem;
+    }
+
+    .header-palabras-nueve {
+        color: lighten(v.$color-fuente-terciaria, 73);
+        margin-right: 15%;
+    }
+
+    .header-palabras-diez {
+        color: lighten(v.$color-fuente-terciaria, 55);
+        margin-left: 7%;
+        font-size: 7rem;
+    }
+
+    .header-palabras-once {
+        color: lighten(v.$color-fuente-terciaria, 50);
+        font-size: 9.5rem;
+        margin-top: -2rem;
+    }
+
+    .header-palabras-doce {
+        color: lighten(v.$color-fuente-terciaria, 72);
+        margin-top: 3rem;
+        font-size: 7.1rem;
+    }
+
+    .header-palabras-trece {
+        color: lighten(v.$color-fuente-terciaria, 65);
+        font-size: 7.4rem;
+        margin-top: -3rem;
+        margin-left: 20%;
+    }
+
+    .header-palabras-catorce {
+        color: lighten(v.$color-fuente-terciaria, 55);
+        font-size: 7.1rem;
+    }
+
+    .header-palabras-quince {
+        color: lighten(v.$color-fuente-terciaria, 60);
+        font-size: 7.3rem;
+        margin-left: 4%;
+        margin-top: -3rem;
+    }
+
+    .header-palabras-diesiseis {
+        color: lighten(v.$color-fuente-terciaria, 71);
+        font-size: 8.1rem;
+        margin-right: 25%;
+        margin-top: -2rem;
     }
 }

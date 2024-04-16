@@ -23,7 +23,18 @@
     .navbar__logo-texto {
         color: v.$color-fuente-secundario;
         font-size: 3rem;
-        margin-left: -1.5rem;
+        margin-left: -3.5rem;
+        position: relative;
+
+        &::after {
+            content: "Freelance";
+            position: absolute;
+            top: 1rem;
+            left: 12rem;
+            transform: rotate(-25deg);
+            font-size: 2.4rem;
+            letter-spacing: 2px;
+        }
     }
 
     .navbar__menu-fondo {
@@ -50,6 +61,33 @@
         font-size: 2rem;
         justify-content: flex-end;
         padding: 1rem 0;
+    }
+
+    .navbar__submenu-item {
+        color: lighten(v.$fondo-principal, $amount: 20);
+        transition: color .3s ease;
+
+        &:hover {
+            color: darken(v.$fondo-principal, 5);
+        }
+    }
+
+    .navbar__submenu-item--blanco {
+        color: v.$color-fuente-principal;
+    }
+
+    .navbar__submenu-language {
+        background-color: transparent;
+        border: none;
+        color: inherit;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        option {
+            background-color: v.$fondo-secundario;
+        }
     }
 
     .navbar__menu {

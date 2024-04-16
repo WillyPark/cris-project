@@ -2,6 +2,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import App from "../App";
 import { Header } from "../ui";
 import { Contact, MonitoringModel, Profesionals, Services } from "../components";
+import { Regions } from "../components/Regions";
 
 export const Router = () => {
     const router = createBrowserRouter([
@@ -30,6 +31,10 @@ export const Router = () => {
                     path: "/contact",
                     element: <Contact />
                 },
+                {
+                    path: "/regions",
+                    element: <Regions />
+                }
             ]
         }
     ])

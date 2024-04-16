@@ -58,6 +58,10 @@ a {
     color: lighten(v.$fondo-principal, $amount: 20)
 }
 
+.activo-oscuro {
+    color: darken(v.$fondo-principal, 5);
+}
+
 .section-aux {
     height: 100px;
     background-color: v.$blanco;
