@@ -28,7 +28,7 @@ export const Navbar = () => {
 
                 <NavLink
                     to="/regions"
-                    className={({ isActive }) => `navbar__submenu-item activo-claro ${isActive ? "activo" : ""}`}
+                    className={({ isActive }) => `navbar__submenu-item activo-claro ${isActive ? "activo-oscuro" : ""}`}
                 >
                     {language.navBar.subMenu[1]}
                 </NavLink>

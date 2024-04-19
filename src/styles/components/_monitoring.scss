@@ -1,0 +1,147 @@
+@use "./../base/variables" as v;
+
+.contenedor-monitoring {
+    min-height: calc(100vh - 123px);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0;
+
+    .monitoring-izquierda,
+    .monitoring-derecha {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .monitoring-izquierda {
+        background-color: v.$fondo-secundario;
+        border-top-left-radius: 6.5rem;
+        border-bottom-left-radius: 6.5rem;
+        color: v.$color-fuente-principal;
+    }
+
+    .monitoring-derecha {
+        background-color: v.$fondo-principal;
+        color: v.$color-fuente-secundario;
+    }
+
+    .monitoring__logo {
+        width: 15rem;
+        height: 13rem;
+    }
+
+    .monitoring__logo--gris {
+        filter: invert(0.7);
+    }
+
+    .monitoring__logo-texto {
+        font-size: 4.2rem;
+        margin-left: -5rem;
+        position: relative;
+    }
+}
+
+.monitoring__logo-texto--izquierda::after {
+    content: "Freelance";
+    color: lighten(v.$fondo-principal, 20);
+    position: absolute;
+    top: 2.8rem;
+    left: 17.5rem;
+    transform: rotate(-25deg);
+    font-size: 2.4rem;
+    letter-spacing: 2px;
+}
+
+.monitoring__logo-texto--derecha::after {
+    content: "Freelance";
+    color: v.$blanco;
+    position: absolute;
+    top: 3rem;
+    left: 22rem;
+    transform: rotate(-25deg);
+    font-size: 2.4rem;
+    letter-spacing: 2px;
+}
+
+.monitoring__titulo {
+    color: v.$color-fuente-secundario;
+    text-align: center;
+    font-size: 4rem;
+}
+
+.monitoring__experiencia {
+    background-color: v.$fondo-secundario;
+    color: v.$color-fuente-principal;
+    border-radius: 5rem;
+    padding: 1.5rem 2.5rem 3rem;
+
+    .monitoring__experiencia-contenedor-titulo {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        .monitoring__experiencia-list {
+            height: 4rem;
+            width: 4.5rem;
+        }
+
+        h3 {
+            color: lighten(v.$fondo-principal, 10);
+            font-size: 4rem;
+            margin: 0;
+        }
+    }
+
+    .monitoring__experiencia-contenido {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .monitoring__experiencia-izquierda {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 5rem;
+
+        .monitoring__experiencia-logo {
+            width: 15rem;
+            height: 13rem;
+            filter: invert(0.7);
+        }
+
+        .monitoring__experiencia-logo-texto {
+            font-size: 4rem;
+            margin-left: -5rem;
+            position: relative;
+
+            &::after {
+                content: "Freelance";
+                color: lighten(v.$fondo-principal, 10);
+                position: absolute;
+                top: 2.4rem;
+                left: 16.5rem;
+                transform: rotate(-25deg);
+                font-size: 2.4rem;
+                letter-spacing: 2px;
+            }
+        }
+    }
+
+    &--subrayado {
+        border-bottom: 3px solid lighten(v.$fondo-principal, 10);
+        padding-bottom: .4rem;
+    }
+
+    &--coloreado {
+        color: lighten(v.$fondo-principal, 10);
+    }
+
+    .monitoring__experiencia-derecha {
+        text-align: right;
+        font-size: 3rem;
+        margin-right: 5rem;
+    }
+}

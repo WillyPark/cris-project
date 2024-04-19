@@ -60,8 +60,45 @@
             "diesiseis": "Ginecología"
         }
     },
+    "regions": {
+        "countryOne": {
+            "title": "España",
+            "textOne": "Servicios Completos de Monitoreo",
+            "textTwo": [
+                "La",
+                "mejor reputación",
+                "en gestión hospitalaria de todo el país"
+            ],
+            "north": "Norte",
+            "south": "Sur"
+        },
+        "countryTwo": {
+            "title": "Francia",
+            "text": [
+                "Inicio del Estudio",
+                "Evaluación del Sitio",
+                "Iniciación del Sitio"
+            ]
+        },
+        "countryTree": {
+            "title": "México",
+            "text": [
+                "Gestión de",
+                "Proyectos"
+            ]
+        }
+    },
     "monitoring": {
-        "title": "Modelo de Monitoreo"
+        "title": "Dos modelos para cubrir todo el camino",
+        "model": "MODELO rápido",
+        "text": [
+            "Servicio Completo de Monitoreo",
+            "proveído por un Snr. CRA"
+        ],
+        "years": [
+            "15 años de",
+            "experiencia"
+        ]
     },
     "services": {
         "title": "Servicios"

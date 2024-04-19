@@ -59,7 +59,7 @@ a {
 }
 
 .activo-oscuro {
-    color: darken(v.$fondo-principal, 5);
+    color: darken(v.$fondo-principal, 5) !important;
 }
 
 .section-aux {

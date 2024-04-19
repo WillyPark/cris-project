@@ -1,8 +1,107 @@
-.regions-img {
+@use "./../base/variables" as v;
+
+.regiones-img {
     height: calc(100vh - 123px);
     text-align: center;
 
     img {
         height: 100%;
+    }
+}
+
+.contenedor-regiones-spain {
+    background-color: v.$fondo-secundario;
+    border-radius: 10rem;
+    color: v.$color-fuente-principal;
+    text-align: center;
+    margin-top: 4rem;
+    padding: 4rem 3rem;
+
+    h2 {
+        font-size: 6rem;
+        margin-top: 0;
+    }
+
+    p {
+        font-size: 3.5rem;
+    }
+
+    .regiones__ciudades-spain {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 5rem;
+
+    }
+
+    .regiones__norte-sur-spain {
+        display: flex;
+        justify-content: center;
+        gap: 15%;
+    }
+}
+
+.hospitales-spain {
+    text-align: left;
+    padding: 0 1rem;
+
+    h3 {
+        text-align: center;
+        margin-bottom: 3rem;
+        font-size: 3.7rem;
+    }
+
+    li {
+        list-style: disc;
+        line-height: 1.5;
+        font-size: 1.8rem;
+    }
+}
+
+.contenedor-regiones-paises {
+    background-color: v.$fondo-secundario;
+    border-radius: 5rem;
+    color: v.$color-fuente-principal;
+    text-align: center;
+    margin-top: 5rem;
+    padding: 4rem 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    &:last-of-type {
+        margin-bottom: 5rem;
+    }
+}
+
+.regiones__paises {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-right: 2px solid v.$color-fuente-principal;
+    padding: 0 5.5rem;
+
+    h3 {
+        font-size: 5rem;
+        margin-top: 0;
+        margin: 0;
+    }
+
+    .regiones__paises-texto {
+        text-align: right;
+
+        p {
+            font-size: 2.8rem;
+            margin: 1.5rem 0;
+        }
+    }
+}
+
+.regiones__paises-hospitales {
+    text-align: left;
+    margin-left: 3rem;
+
+    li {
+        list-style: disc;
+        line-height: 1.5;
+        font-size: 1.8rem;
     }
 }

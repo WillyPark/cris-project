@@ -60,8 +60,45 @@
             "diesiseis": "Gynecology"
         }
     },
+    "regions": {
+        "countryOne": {
+            "title": "Spain",
+            "textOne": "Full Monitoring Services",
+            "textTwo": [
+                "The",
+                "best reputation",
+                "in hospital management across all the country"
+            ],
+            "north": "North",
+            "south": "South"
+        },
+        "countryTwo": {
+            "title": "France",
+            "text": [
+                "Study Start Up",
+                "Site Evaluation",
+                "Site Initiation"
+            ]
+        },
+        "countryTree": {
+            "title": "México",
+            "text": [
+                "Project",
+                "Management"
+            ]
+        }
+    },
     "monitoring": {
-        "title": "Monitoring Model"
+        "title": "Two models to cover all the way",
+        "model": "FAST model",
+        "text": [
+            "Full Monitoring Service",
+            "provided by a Snr. CRA"
+        ],
+        "years": [
+            "15 years of",
+            "experience"
+        ]
     },
     "services": {
         "title": "Services"
