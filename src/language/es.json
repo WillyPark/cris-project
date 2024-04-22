@@ -57,7 +57,7 @@
             "trece": "Neurología",
             "catorce": "Gastroenterología",
             "quince": "Psiquiatría",
-            "diesiseis": "Ginecología"
+            "dieciseis": "Ginecología"
         }
     },
     "regions": {
@@ -101,7 +101,33 @@
         ]
     },
     "services": {
-        "title": "Servicios"
+        "title": "Elige la forma de contratarnos",
+        "serviceOne": {
+            "title": [
+                "Servicio",
+                "por Estudio"
+            ],
+            "text": "Todas las tareas de monitoreo a lo largo del estudio"
+        },
+        "serviceTwo": {
+            "title": [
+                "Servicio",
+                "por Patrocinador"
+            ],
+            "text": "Cubriendo los diferentes ensayos de un patrocinador / CRO"
+        },
+        "serviceTree": {
+            "title": [
+                "Servicios",
+                "por Actividad"
+            ],
+            "text": [
+                "Por visita",
+                "Por auditoría",
+                "Uno por uno..."
+            ]
+        },
+        "button": "¿Cuándo comenzamos?"
     },
     "profesionals": {
         "title": [
@@ -118,6 +144,28 @@
     },
     "contact": {
         "title": "¿Cuándo quieres que iniciemos?"
+    },
+    "words": {
+        "uno": "Visitas de Iniciación en Sitio",
+        "dos": "CAPA",
+        "tres": "Visitas Intermedias de Seguimiento",
+        "cuatro": "Entrenamientos",
+        "cinco": "KoL",
+        "seis": "Start up",
+        "siete": "Manejo de Sitio",
+        "ocho": "Preparación de Auditoría",
+        "nueve": "Evaluación en Sitio",
+        "diez": "SOPs",
+        "once": "Informes",
+        "doce": "Cierre de Visitas",
+        "trece": "Viajes",
+        "catorce": "En sitio",
+        "quince": "Monitoreo remoto",
+        "dieciseis": "En sitio",
+        "diecisiete": "Seguimiento",
+        "dieciocho": "Leading",
+        "diecinueve": "Contratos",
+        "veinte": "Rastreo"
     },
     "form": {
         "company": [

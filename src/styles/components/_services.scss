@@ -1,0 +1,76 @@
+@use "./../base/variables" as v;
+
+.fondo-servicios {
+    min-height: calc(100vh - 123px);
+    // background: rgb(249, 199, 167);
+    // background: radial-gradient(circle, rgba(249, 199, 167, 1) 0%, rgba(245, 103, 14, 1) 100%);
+    background-color: v.$fondo-principal;
+}
+
+.servicios {
+    text-align: center;
+
+    h1 {
+        font-size: 5rem;
+        color: v.$color-fuente-terciaria;
+        margin: 1rem 0;
+    }
+
+    .servicios-contenedor {
+        margin-top: 5.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 7rem;
+        color: v.$color-fuente-principal;
+    }
+
+    .servicios__servicio {
+        background-color: v.$fondo-secundario;
+        border-radius: 4.5rem;
+        width: 30rem;
+        height: 35rem;
+        padding: 2.5rem 2rem;
+
+        h2 {
+            font-weight: normal;
+            font-size: 2.5rem;
+            margin-bottom: 4.5rem;
+        }
+
+        p {
+            font-size: 2.2rem;
+            letter-spacing: 2px;
+            line-height: 2;
+        }
+    }
+
+    .servicios__boton {
+        // background-image: linear-gradient(132deg, #f5670e -3.62%, #ff731c 9.38%, rgb(236, 106, 26) 19.95%, rgb(227, 110, 38) 28.48%, rgb(227, 117, 49) 35.33%, rgb(232, 127, 62) 40.88%, rgb(224, 131, 73) 45.49%, rgb(224, 140, 87)49.55%, rgb(219, 142, 95) 53.43%, rgb(216, 147, 104) 57.49%, rgb(210, 150, 112) 62.1%, rgb(207, 152, 118) 67.65%, rgb(206, 156, 125) 74.5%, rgb(205, 161, 133) 83.03%, rgb(205, 167, 143) 93.6%, rgb(197, 165, 145) 106.6%);
+        // background-image: linear-gradient(132deg, rgba(245, 103, 14, 1) 0%, rgba(245, 110, 24, 1) 13%, rgba(245, 115, 32, 1) 32%, rgba(246, 126, 49, 1) 48%, rgba(247, 139, 70, 1) 62%, rgba(248, 154, 95, 1) 74%, rgba(249, 199, 167, 1) 100%);
+        background-color: v.$fondo-principal;
+        border: none;
+        color: v.$color-fuente-principal;
+        display: inline-block;
+        font-size: 3rem;
+        font-weight: 700;
+        margin-top: 8rem;
+        margin-bottom: 2rem;
+        padding: 4rem 3.4rem;
+        width: 50%;
+        // transition: background .3s;
+        // background-size: 100% 100%;
+
+        // &:hover {
+        //     background-position: 100% 0%;
+        //     background-size: 100% 400%;
+        //     cursor: pointer;
+        // }
+
+        transition: background-color .3s ease;
+
+        &:hover {
+            background-color: darken($color: v.$fondo-principal, $amount: 10)
+        }
+    }
+}

@@ -57,7 +57,7 @@
             "trece": "Neurology",
             "catorce": "Gastroenterology",
             "quince": "Psychiatry",
-            "diesiseis": "Gynecology"
+            "dieciseis": "Gynecology"
         }
     },
     "regions": {
@@ -101,7 +101,33 @@
         ]
     },
     "services": {
-        "title": "Services"
+        "title": "Choose the way to hire us",
+        "serviceOne": {
+            "title": [
+                "Services",
+                "by Study"
+            ],
+            "text": "All monitoring tasks throughout the study"
+        },
+        "serviceTwo": {
+            "title": [
+                "Services",
+                "by Sponsor"
+            ],
+            "text": "Covering different trials of one Sponsor / CRO"
+        },
+        "serviceTree": {
+            "title": [
+                "Services",
+                "by Activity"
+            ],
+            "text": [
+                "Per visit",
+                "Per audit",
+                "One by one..."
+            ]
+        },
+        "button": "When do we start?"
     },
     "profesionals": {
         "title": [
@@ -118,6 +144,28 @@
     },
     "contact": {
         "title": "When do you want us to start?"
+    },
+    "words": {
+        "uno": "Site Initiation Visits",
+        "dos": "CAPA",
+        "tres": "Interim Monitoring Visits",
+        "cuatro": "Trainings",
+        "cinco": "KoL",
+        "seis": "Start up",
+        "siete": "Site Management",
+        "ocho": "Audit preparation",
+        "nueve": "Site Evaluation Visits",
+        "diez": "SOPs",
+        "once": "Reporting",
+        "doce": "Close of Visits",
+        "trece": "Travel",
+        "catorce": "On site",
+        "quince": "Remote monitoring",
+        "dieciseis": "On site",
+        "diecisiete": "Follow up",
+        "dieciocho": "Leading",
+        "diecinueve": "Contracts",
+        "veinte": "Tracking"
     },
     "form": {
         "company": [
