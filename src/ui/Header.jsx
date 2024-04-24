@@ -15,6 +15,8 @@ export const Header = () => {
                         <span className="header__titulo--resaltado">{language.header.title[4]}</span> {language.header.title[5]}
                     </h1>
 
+                    {/* <img className="header__llave-svg" src="./icons/llave.svg" alt="Llave" /> */}
+
                     {/* <p className="header__llave">&#123;</p> */}
 
                     <div className="header__contenido">

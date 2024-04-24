@@ -83,6 +83,7 @@
         .monitoring__experiencia-list {
             height: 4rem;
             width: 4.5rem;
+            // stroke: #3C6FB9;
         }
 
         h3 {
@@ -93,11 +94,10 @@
     }
 
     .monitoring__experiencia-contenido {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        width: 100%;
+        display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
+        padding: 0 4rem;
     }
 
     .monitoring__experiencia-izquierda {
@@ -105,6 +105,15 @@
         justify-content: flex-start;
         align-items: center;
         margin-bottom: 5rem;
+        position: relative;
+
+        &::after {
+            content: "";
+            border-bottom: 3px solid lighten(v.$fondo-principal, 10);
+            position: absolute;
+            bottom: 0;
+            width: calc(100% + 7rem);
+        }
 
         .monitoring__experiencia-logo {
             width: 15rem;
@@ -142,6 +151,152 @@
     .monitoring__experiencia-derecha {
         text-align: right;
         font-size: 3rem;
-        margin-right: 5rem;
+    }
+}
+
+.model {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0;
+    position: relative;
+
+    .model__fondo-arriba {
+        background-color: v.$fondo-principal;
+        height: 22.5rem;
+    }
+
+    .model__fondo-abajo {
+        background-color: #eef1f5;
+        height: 90vh;
+    }
+
+    .model__fondo {
+        position: absolute;
+        background-color: v.$color-fuente-principal;
+        padding: 0 2rem 1rem;
+        border-radius: 2rem;
+        left: 50%;
+        transform: translate(-50%, 16%);
+        max-width: 1000px;
+        width: 95%;
+    }
+
+    .model__contenedor-titulo {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .model__logo-contenedor {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+
+        .model__logo {
+            width: 14rem;
+            height: 12rem;
+        }
+
+        .model__logo-texto {
+            font-size: 3.8rem;
+            margin-left: -5rem;
+            position: relative;
+            font-weight: bold;
+            color: v.$fondo-secundario;
+
+            &::after {
+                content: "Freelance";
+                color: v.$fondo-principal;
+                position: absolute;
+                top: 2.8rem;
+                left: 21rem;
+                font-weight: bold;
+                transform: rotate(-25deg);
+                font-size: 2.4rem;
+                letter-spacing: 2px;
+            }
+        }
+    }
+
+    .model__model-contenedor {
+        display: flex;
+        align-items: flex-start;
+        margin-top: 2rem;
+
+        .model__model-barras {
+            height: 4rem;
+            width: 4.5rem;
+        }
+
+        h3 {
+            font-size: 4rem;
+            color: v.$fondo-secundario;
+            margin: 0;
+        }
+    }
+
+    .model__titulo {
+        text-align: center;
+        font-size: 5.5rem;
+        color: darken(v.$color-fuente-principal, 50);
+        margin: 0;
+
+        &--azul {
+            color: v.$fondo-secundario;
+            margin-top: -1.5rem;
+        }
+    }
+
+    .model__contenido {
+        background-image: linear-gradient(225deg, #1b2f54 -3.62%, #1b3055 9.38%, #1b3157 19.95%, #1b345a 28.48%, #1b385e 35.33%, #1b3c62 40.88%, #1b4168 45.49%, #1b466e 49.55%, #1b4c74 53.43%, #1b527b 57.49%, #1a5982 62.1%, #1a5f89 67.65%, #1a6590 74.5%, #1a6b97 83.03%, #1a719d 93.6%, #1a76a3 106.6%);
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 4rem;
+        align-items: center;
+        width: 65%;
+        margin: 3rem auto;
+        padding: 2rem 3rem;
+        border-radius: 2rem;
+
+        h3 {
+            color: v.$color-fuente-principal;
+            font-size: 3rem;
+        }
+
+        p {
+            text-align: center;
+            font-size: 2.5rem;
+            margin: 0;
+            line-height: 1.2;
+        }
+
+        .model__contenido-snr {
+            width: 32rem;
+            padding: .5rem 0;
+            color: v.$color-fuente-principal;
+            background: rgba(252, 252, 252, 0.25);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(1.5px);
+        }
+
+        .model__contenido__contenedor-back {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .model__contenido-back {
+            width: 15rem;
+            padding: .5rem 0;
+            color: v.$color-fuente-principal;
+            background: rgba(255, 255, 255, 0.25);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(2px);
+        }
     }
 }

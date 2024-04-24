@@ -91,6 +91,11 @@
     "monitoring": {
         "title": "Dos modelos para cubrir todo el camino",
         "model": "MODELO rápido",
+        "modelIntegral": "Modelo integral",
+        "modelTitle": "Cubriendo todos los servicios",
+        "accountable": "Responsable",
+        "back": "Back-Up",
+        "one": "Un",
         "text": [
             "Servicio Completo de Monitoreo",
             "proveído por un Snr. CRA"

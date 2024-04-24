@@ -10,7 +10,9 @@ export const Contact = () => {
             <main className="contenedor fadeOut contact-contenedor">
                 <h1>{language.contact.title}</h1>
 
-                <Form tipo={3} />
+                <div className="contact-form">
+                    <Form tipo={3} />
+                </div>
             </main>
         </div>
     )

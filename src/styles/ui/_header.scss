@@ -14,11 +14,17 @@
         font-size: 5.3rem;
     }
 
-    // .header__llave {
-    //     color: v.$color-fuente-principal;
-    //     font-size: 35rem;
-    //     font-weight: normal;
-    //     margin-top: 28rem;
+    .header__llave {
+        color: v.$color-fuente-principal;
+        font-size: 30rem;
+        font-weight: normal;
+        // margin-top: 28rem;
+    }
+
+    // .header__llave-svg {
+    //     height: 50rem;
+    //     width: auto;
+    //     transform: rotate(180deg);
     // }
 
     .header__titulo {

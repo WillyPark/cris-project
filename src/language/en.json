@@ -91,6 +91,11 @@
     "monitoring": {
         "title": "Two models to cover all the way",
         "model": "FAST model",
+        "modelIntegral": "Integral model",
+        "modelTitle": "Covering All Duty",
+        "accountable": "Accountable",
+        "back": "Back-Up",
+        "one": "One",
         "text": [
             "Full Monitoring Service",
             "provided by a Snr. CRA"

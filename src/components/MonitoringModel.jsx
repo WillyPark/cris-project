@@ -23,15 +23,15 @@ export const MonitoringModel = () => {
 
             <div className="contenedor monitoring__experiencia">
                 <div className="monitoring__experiencia-contenedor-titulo">
-                    <img className="monitoring__experiencia-list" src="./icons/barras.svg" alt="Menu Hamburguesa" />
+                    <img className="monitoring__experiencia-list" src="./icons/barra-cursiva.svg" alt="Menu Hamburguesa" />
 
                     <h3><em>{language.monitoring.model}</em></h3>
                 </div>
 
                 <div className="monitoring__experiencia-contenido">
                     <div className="monitoring__experiencia-izquierda">
-                        <img className="fadeOut monitoring__experiencia-logo" src="./img/logo.webp" alt="Logo"></img>
-                        <span className="fadeOut monitoring__experiencia-logo-texto">Senior CRA</span>
+                        <img className="monitoring__experiencia-logo" src="./img/logo.webp" alt="Logo"></img>
+                        <span className="monitoring__experiencia-logo-texto">Senior CRA</span>
                     </div>
 
                     <div className="monitoring__experiencia-derecha">
@@ -42,6 +42,55 @@ export const MonitoringModel = () => {
             </div>
 
             <Words />
+
+            <section className="model">
+                <div className="model__fondo-arriba"></div>
+
+                <div className="model__fondo">
+                    <div className="model__contenedor-titulo">
+                        <div className="model__logo-contenedor">
+                            <img className="model__logo" src="./img/logo.webp" alt="Logo"></img>
+                            <span className="model__logo-texto">CRAs back-Up</span>
+                        </div>
+
+                        <div className="model__model-contenedor">
+                            <img className="model__model-barras" src="./icons/barra-cursiva.svg" alt="Menu Hamburguesa" />
+
+                            <h3><em>{language.monitoring.modelIntegral}</em></h3>
+                        </div>
+                    </div>
+
+                    <h2 className="model__titulo">3 CRAs</h2>
+                    <h2 className="model__titulo model__titulo--azul">{language.monitoring.modelTitle}</h2>
+
+                    <div className="model__contenido">
+                        <h3>{language.monitoring.accountable}</h3>
+
+                        <div className="model__contenido-snr">
+                            <p>{language.monitoring.one}</p>
+                            <p>Snr. CRA</p>
+                        </div>
+                    </div>
+
+                    <div className="model__contenido">
+                        <h3>{language.monitoring.back}</h3>
+
+                        <div className="model__contenido__contenedor-back">
+                            <div className="model__contenido-back">
+                                <p>{language.monitoring.one}</p>
+                                <p>Jr. CRA</p>
+                            </div>
+
+                            <div className="model__contenido-back">
+                                <p>{language.monitoring.one}</p>
+                                <p>CRA trainee</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="model__fondo-abajo"></div>
+            </section>
         </>
     )
 }

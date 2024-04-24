@@ -26,17 +26,20 @@ export const Form = ({ tipo }) => {
 
             <div className="campo">
                 <label htmlFor="phone">{language.form.phone[0]}:</label>
-                <input type="text" placeholder={language.form.phone[1]} id="phone" name="phone" />
+                <input type="tel" placeholder={language.form.phone[1]} id="phone" name="phone" />
             </div>
 
-            <div className="campo">
-                <label htmlFor="date">{language.form.date}:</label>
-                <input type="date" id="date" name="date" />
-            </div>
+            {
+                tipo == 3 && <div className="campo">
+                    <label htmlFor="date">{language.form.date}:</label>
+                    <input type="date" id="date" name="date" />
+                </div>
+            }
+
 
             <div className="campo">
-                <label htmlFor="comment">{language.form.comments[0]}:</label>
-                <input type="text" placeholder={language.form.comments[1]} id="comment" name="comment" />
+                <label htmlFor="comment" className="label-textarea">{language.form.comments[0]}:</label>
+                <textarea rows="5" placeholder={language.form.comments[1]} id="comment" name="comment" />
             </div>
 
             <button className="btn-submit" type="submit" disabled>{language.form.button}</button>
