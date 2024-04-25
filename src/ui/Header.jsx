@@ -15,10 +15,6 @@ export const Header = () => {
                         <span className="header__titulo--resaltado">{language.header.title[4]}</span> {language.header.title[5]}
                     </h1>
 
-                    {/* <img className="header__llave-svg" src="./icons/llave.svg" alt="Llave" /> */}
-
-                    {/* <p className="header__llave">&#123;</p> */}
-
                     <div className="header__contenido">
                         <p>100% Deliverables</p>
                         <p>100% Fit on you MP</p>
@@ -30,7 +26,7 @@ export const Header = () => {
                 </header>
             </div>
 
-            <section className="palabras">
+            {/* <section className="palabras">
                 <div className="fila">
                     <p className="header-palabras-uno">{language.header.words.uno}</p>
                     <p className="header-palabras-dos">{language.header.words.dos}</p>
@@ -67,7 +63,7 @@ export const Header = () => {
                     <p className="header-palabras-quince">{language.header.words.quince}</p>
                     <p className="header-palabras-dieciseis">{language.header.words.dieciseis}</p>
                 </div>
-            </section>
+            </section> */}
         </>
     )
 }

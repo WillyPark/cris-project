@@ -1,11 +1,20 @@
 @use "./../base/variables" as v;
+@use "./../base/mixins" as m;
 
 .header {
     align-items: center;
     display: flex;
-    gap: 10rem;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
     justify-content: center;
-    width: 100%;
+    width: 100vw;
+
+    @include m.tablet {
+        flex-direction: row;
+        gap: 10rem;
+        text-align: left;
+    }
 
     h1 {
         background: linear-gradient(to right, v.$fondo-secundario, lighten(v.$fondo-secundario, 15));
@@ -14,21 +23,12 @@
         font-size: 5.3rem;
     }
 
-    .header__llave {
-        color: v.$color-fuente-principal;
-        font-size: 30rem;
-        font-weight: normal;
-        // margin-top: 28rem;
-    }
-
-    // .header__llave-svg {
-    //     height: 50rem;
-    //     width: auto;
-    //     transform: rotate(180deg);
-    // }
-
     .header__titulo {
-        text-align: right;
+        text-align: center;
+
+        @include m.tablet {
+            text-align: right;
+        }
 
         &--resaltado {
             color: darken(v.$blanco, 5);

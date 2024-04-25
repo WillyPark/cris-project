@@ -1,4 +1,5 @@
 @use "./../base/variables" as v;
+@use "./../base/mixins" as m;
 
 .navbar {
     display: flex;
@@ -23,8 +24,12 @@
     .navbar__logo-texto {
         color: v.$color-fuente-secundario;
         font-size: 3rem;
-        margin-left: -3.5rem;
+        margin-left: -4rem;
         position: relative;
+
+        @include m.tablet {
+            margin-left: -3.5rem;
+        }
 
         &::after {
             content: "Freelance";
@@ -46,7 +51,8 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        height: fit-content;
+        // height: fit-content;
+        position: relative;
 
         ul {
             margin: 0;
@@ -58,9 +64,13 @@
         color: v.$blanco;
         display: flex;
         gap: 3rem;
-        font-size: 2rem;
+        font-size: 2.1rem;
         justify-content: flex-end;
         padding: 1rem 0;
+
+        @include m.tablet {
+            font-size: 2rem;
+        }
     }
 
     .navbar__submenu-item {
@@ -73,7 +83,12 @@
     }
 
     .navbar__submenu-item--blanco {
+        display: none;
         color: v.$color-fuente-principal;
+
+        @include m.tablet {
+            display: block;
+        }
     }
 
     .navbar__submenu-language {
@@ -90,11 +105,37 @@
         }
     }
 
+    .navbar__menu-responsive {
+        height: 4rem;
+        width: 4rem;
+        margin-right: 1rem;
+
+        @include m.tablet {
+            display: none;
+        }
+    }
+
     .navbar__menu {
         display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        gap: 2rem;
+        flex-direction: column;
+        padding-top: 4rem;
+        background-color: v.$color-fuente-principal;
+        gap: 4rem;
+        position: absolute;
+        top: 79px;
+        left: -28rem;
+        height: 100vh;
+
+        @include m.tablet {
+            padding-top: 0;
+            position: inherit;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 2rem;
+            height: auto;
+            top: 0;
+        }
     }
 
     .navbar__menu-item {
@@ -111,5 +152,45 @@
         &:last-child {
             margin-right: 1.5rem;
         }
+    }
+}
+
+.mostrar {
+    left: -2rem !important;
+    animation-name: menu;
+    animation-duration: .9s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+
+.desaparecer {
+    left: -2rem !important;
+    animation-name: menuDesaparecer;
+    animation-duration: .9s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+
+    @include m.tablet {
+        animation: inherit;
+    }
+}
+
+@keyframes menu {
+    0% {
+        transform: translateX(-28rem);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes menuDesaparecer {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-28rem);
     }
 }
