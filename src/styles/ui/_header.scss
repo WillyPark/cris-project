@@ -6,7 +6,7 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    gap: 1rem;
+    gap: 3rem;
     justify-content: center;
     width: 100vw;
 
@@ -20,7 +20,11 @@
         background: linear-gradient(to right, v.$fondo-secundario, lighten(v.$fondo-secundario, 15));
         color: transparent;
         background-clip: text;
-        font-size: 5.3rem;
+        font-size: 4.7rem;
+
+        @include m.tablet {
+            font-size: 5.3rem;
+        }
     }
 
     .header__titulo {
@@ -39,8 +43,12 @@
         color: v.$blanco;
         display: flex;
         flex-direction: column;
-        font-size: 2.7rem;
+        font-size: 2.2rem;
         justify-content: center;
+
+        @include m.tablet {
+            font-size: 2.7rem;
+        }
 
         p {
             margin: 1.8rem 0;

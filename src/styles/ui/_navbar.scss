@@ -17,33 +17,41 @@
     }
 
     .navbar__logo {
-        width: 10rem;
-        height: 8rem;
+        width: 9rem;
+        height: 7rem;
     }
 
     .navbar__logo-texto {
         color: v.$color-fuente-secundario;
-        font-size: 3rem;
-        margin-left: -4rem;
+        font-size: 2.3rem;
+        margin-left: -3.3rem;
         position: relative;
 
         @include m.tablet {
+            font-size: 3rem;
             margin-left: -3.5rem;
         }
 
         &::after {
             content: "Freelance";
             position: absolute;
-            top: 1rem;
-            left: 12rem;
+            top: .7rem;
+            left: 9.4rem;
             transform: rotate(-25deg);
-            font-size: 2.4rem;
+            font-size: 1.8rem;
             letter-spacing: 2px;
+
+            @include m.tablet {
+                font-size: 2.3rem;
+                top: 1rem;
+                left: 12rem;
+            }
         }
     }
 
     .navbar__menu-fondo {
         background-color: v.$color-fuente-principal;
+        padding: .5rem 0;
     }
 
     .navbar__menu-contenedor {
@@ -64,7 +72,7 @@
         color: v.$blanco;
         display: flex;
         gap: 3rem;
-        font-size: 2.1rem;
+        font-size: 1.5rem;
         justify-content: flex-end;
         padding: 1rem 0;
 
@@ -106,8 +114,8 @@
     }
 
     .navbar__menu-responsive {
-        height: 4rem;
-        width: 4rem;
+        height: 3.5rem;
+        width: 3.5rem;
         margin-right: 1rem;
 
         @include m.tablet {
@@ -122,8 +130,8 @@
         background-color: v.$color-fuente-principal;
         gap: 4rem;
         position: absolute;
-        top: 79px;
-        left: -28rem;
+        top: 70px;
+        left: -30rem;
         height: 100vh;
 
         @include m.tablet {
@@ -135,6 +143,7 @@
             gap: 2rem;
             height: auto;
             top: 0;
+            left: 0;
         }
     }
 
@@ -177,7 +186,7 @@
 
 @keyframes menu {
     0% {
-        transform: translateX(-28rem);
+        transform: translateX(-30rem);
     }
 
     100% {
@@ -191,6 +200,6 @@
     }
 
     100% {
-        transform: translateX(-28rem);
+        transform: translateX(-30rem);
     }
 }

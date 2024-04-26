@@ -5,7 +5,7 @@ import { LanguageContext } from "../context/LanguageContext";
 export const Navbar = () => {
     const { setLang, language } = useContext(LanguageContext);
     const [mostrar, setMostrar] = useState(false)
-    const [desaparecer, setDesaparecer] = useState(true)
+    const [desaparecer, setDesaparecer] = useState()
 
     const onChangeLanguage = (e) => {
         const value = e.target.value;
@@ -19,7 +19,12 @@ export const Navbar = () => {
 
     const menuResponsive = () => {
         setMostrar(!mostrar);
-        setDesaparecer(!desaparecer);
+
+        if (mostrar) {
+            setDesaparecer(true)
+        } else {
+            setDesaparecer(false);
+        }
     }
 
     const quitarMenu = () => {
