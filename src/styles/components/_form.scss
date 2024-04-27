@@ -1,29 +1,51 @@
 @use "./../base/variables" as v;
+@use "./../base/mixins" as m;
 
 .formulario {
     align-items: center;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 3rem;
     justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+
+    @include m.tablet {
+        gap: 2rem;
+        width: 100%;
+    }
 
     .campo {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 90%;
+        flex-direction: column;
+        width: 100%;
+
+        @include m.tablet {
+            gap: 1.9rem;
+            flex-direction: row;
+            width: 90%;
+        }
 
         label {
             color: v.$color-fuente-principal;
             font-size: 1.7rem;
-            width: 50%;
+            width: 100%;
+            margin-bottom: 1rem;
+
+            @include m.tablet {
+                margin-bottom: 0;
+                width: 50%;
+            }
 
         }
 
         .label-textarea {
             display: flex;
             justify-content: flex-start;
-            height: 90%;
+
+            @include m.tablet {
+                height: 90%;
+            }
         }
 
         input,
@@ -34,7 +56,11 @@
             outline: none;
             padding: .7rem .9rem;
             transition: outline .1s ease-in-out;
-            width: 50%;
+            width: 100%;
+
+            @include m.tablet {
+                width: 50%;
+            }
 
             &:focus {
                 outline: 3px solid lighten(v.$fondo-secundario, 10);

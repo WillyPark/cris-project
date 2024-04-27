@@ -9,17 +9,15 @@ export const MonitoringModel = () => {
         <>
             <main className="contenedor-monitoring">
                 <div className="monitoring-izquierda">
-                    <img className="fadeOut monitoring__logo monitoring__logo--gris" src="./img/logo.webp" alt="Logo"></img>
                     <span className="fadeOut monitoring__logo-texto monitoring__logo-texto--izquierda">Senior CRA</span>
                 </div>
 
                 <div className="monitoring-derecha">
-                    <img className="fadeOut monitoring__logo" src="./img/logo.webp" alt="Logo"></img>
                     <span className="fadeOut monitoring__logo-texto monitoring__logo-texto--derecha">CRAs back-Up</span>
                 </div>
             </main>
 
-            <h2 className="monitoring__titulo">{language.monitoring.title}</h2>
+            <h2 className="contenedor monitoring__titulo">{language.monitoring.title}</h2>
 
             <div className="contenedor monitoring__experiencia">
                 <div className="monitoring__experiencia-contenedor-titulo">
@@ -30,8 +28,8 @@ export const MonitoringModel = () => {
 
                 <div className="monitoring__experiencia-contenido">
                     <div className="monitoring__experiencia-izquierda">
-                        <img className="monitoring__experiencia-logo" src="./img/logo.webp" alt="Logo"></img>
                         <span className="monitoring__experiencia-logo-texto">Senior CRA</span>
+                        <div className="monitoring__experiencia-barra"></div>
                     </div>
 
                     <div className="monitoring__experiencia-derecha">
@@ -41,7 +39,7 @@ export const MonitoringModel = () => {
                 </div>
             </div>
 
-            <Words />
+            {/* <Words /> */}
 
             <section className="model">
                 <div className="model__fondo-arriba"></div>
@@ -49,12 +47,11 @@ export const MonitoringModel = () => {
                 <div className="model__fondo">
                     <div className="model__contenedor-titulo">
                         <div className="model__logo-contenedor">
-                            <img className="model__logo" src="./img/logo.webp" alt="Logo"></img>
                             <span className="model__logo-texto">CRAs back-Up</span>
                         </div>
 
                         <div className="model__model-contenedor">
-                            <img className="model__model-barras" src="./icons/barra-cursiva.svg" alt="Menu Hamburguesa" />
+                            <img className="model__model-barras" src="./icons/barra-cursiva.svg" alt="Barras Cursivas" />
 
                             <h3><em>{language.monitoring.modelIntegral}</em></h3>
                         </div>

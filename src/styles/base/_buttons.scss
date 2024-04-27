@@ -3,7 +3,11 @@
 
 .btn-submit {
     @include m.boton(v.$fondo-secundario, v.$blanco);
-    margin-top: 2.5rem;
+    margin-top: 1rem;
+
+    @include m.tablet {
+        margin-top: 2rem;
+    }
 }
 
 @include m.tablet {

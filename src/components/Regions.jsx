@@ -6,7 +6,7 @@ export const Regions = () => {
 
     return (
         <>
-            <div className="contenedor-contenido-principal">
+            <div className="regions__contenedor">
                 <main className="contenedor fadeOut">
                     <div className="regiones-img">
                         <img className="regiones-img" src="./img/world.png" alt="Mapa Mundo" />

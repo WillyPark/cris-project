@@ -9,7 +9,7 @@ export const Profesionals = () => {
 
     return (
         <>
-            <div className="contenedor-contenido-principal">
+            <div className="contenedor-contenido-principal profesionals__contenedor-arriba">
                 <main className="contenedor fadeOut">
                     <div className="profesionals-contenedor">
                         <p>{titulo[0]} <strong>{titulo[1]}</strong> {titulo[2]} <strong>{titulo[3]}</strong> {titulo[4]}</p>
@@ -21,7 +21,7 @@ export const Profesionals = () => {
 
             <div className="section-aux"></div>
 
-            <div className="contenedor-contenido-principal">
+            <div className="contenedor-contenido-principal profesionals__contenedor-abajo">
                 <section className="contenedor profesionals-contenedor">
                     <Form tipo={2} />
 

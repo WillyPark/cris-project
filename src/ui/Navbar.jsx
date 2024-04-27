@@ -29,7 +29,10 @@ export const Navbar = () => {
 
     const quitarMenu = () => {
         setMostrar(false);
-        setDesaparecer(true);
+
+        if (mostrar) {
+            setDesaparecer(true);
+        }
     }
 
     return (
