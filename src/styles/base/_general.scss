@@ -45,7 +45,7 @@ a {
     background: rgb(245, 103, 14);
     background: linear-gradient(225deg, rgba(245, 103, 14, 1) 50%, rgba(249, 199, 167, 1) 100%);
     //TODO: Cuando cambie de tamaño el menu, cambiar los valores de la altura y margen
-    min-height: calc(100vh - 118.25px);
+    min-height: calc(100vh - 98.25px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -58,7 +58,7 @@ a {
 }
 
 .height-aux {
-    height: 118.25px;
+    height: 98.25px;
     background-color: red;
 
     @include m.tablet {

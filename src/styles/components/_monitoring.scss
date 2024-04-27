@@ -2,7 +2,7 @@
 @use "./../base/mixins" as m;
 
 .contenedor-monitoring {
-    min-height: calc(100vh - 118.25px);
+    min-height: calc(100vh - 98.25px);
     display: grid;
     padding: 0;
     width: 100%;
@@ -49,7 +49,7 @@
     position: absolute;
     top: -3.4rem;
     left: -6.7rem;
-    background-image: url(./../../../public/img/logo-peque.png);
+    background-image: url(./../../../img/logo-peque.png);
     background-size: cover;
     background-repeat: no-repeat;
     filter: invert(0.7);
@@ -86,7 +86,7 @@
     position: absolute;
     top: -3.4rem;
     left: -6.6rem;
-    background-image: url(./../../../public/img/logo-peque.png);
+    background-image: url(./../../../img/logo-peque.png);
     background-size: cover;
     background-repeat: no-repeat;
     height: 9rem;
@@ -195,7 +195,7 @@
                 position: absolute;
                 top: -3.4rem;
                 left: -6.6rem;
-                background-image: url(./../../../public/img/logo-peque.png);
+                background-image: url(./../../../img/logo-peque.png);
                 background-size: cover;
                 background-repeat: no-repeat;
                 filter: invert(0.7);
@@ -280,7 +280,11 @@
 
     .model__fondo-abajo {
         background-color: #eef1f5;
-        height: 89vh;
+        height: 70rem;
+
+        @include m.tablet {
+            height: 89vh;
+        }
     }
 
     .model__fondo {
@@ -340,7 +344,7 @@
                 position: absolute;
                 top: -3rem;
                 left: -6rem;
-                background-image: url(./../../../public/img/logo-peque.png);
+                background-image: url(./../../../img/logo-peque.png);
                 background-size: cover;
                 background-repeat: no-repeat;
                 width: 10rem;
