@@ -10,7 +10,7 @@ export const Services = () => {
         <>
             <div className="fondo-servicios">
                 <div className="fadeOut">
-                    {/* <Words /> */}
+                    <Words />
                 </div>
             </div>
 

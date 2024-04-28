@@ -2,11 +2,17 @@
 @use "./../base/mixins" as m;
 
 .fondo-servicios {
-    min-height: calc(100vh - 118.25px);
+    min-height: auto;
     background-color: v.$fondo-principal;
 
     @include m.tablet {
         min-height: calc(100vh - 124px);
+    }
+
+    .padding {
+        @include m.tablet {
+            padding-top: 4.5rem;
+        }
     }
 }
 

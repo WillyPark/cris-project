@@ -35,9 +35,13 @@
 .profesionals-contenedor {
     display: grid;
     gap: 3rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 
     @include m.tablet {
         grid-template-columns: 1fr 1fr;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     p {
@@ -46,6 +50,7 @@
         color: v.$fondo-secundario;
         text-align: justify;
         margin-top: 0;
+        margin-bottom: 0;
 
         @include m.tablet {
             font-size: 3.5rem;

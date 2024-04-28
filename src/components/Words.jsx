@@ -5,7 +5,7 @@ export const Words = () => {
     const { language } = useContext(LanguageContext);
 
     return (
-        <section className="palabras">
+        <section className="palabras padding">
             <div className="fila">
                 <p className="palabras-uno">{language.words.uno}</p>
                 <p className="palabras-dos">{language.words.dos}</p>

@@ -39,7 +39,7 @@ export const MonitoringModel = () => {
                 </div>
             </div>
 
-            {/* <Words /> */}
+            <Words />
 
             <section className="model">
                 <div className="model__fondo-arriba"></div>
