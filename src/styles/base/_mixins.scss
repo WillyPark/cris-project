@@ -1,13 +1,19 @@
 @use "./variables" as v;
 
-@mixin telefono {
+@mixin tablet {
+    @media(min-width: 968px) {
+        @content;
+    }
+}
+
+@mixin tabletPalabras {
     @media (min-width: 768px) {
         @content;
     }
 }
 
-@mixin tablet {
-    @media(min-width: 968px) {
+@mixin desktop {
+    @media(min-width: 1120px) {
         @content;
     }
 }

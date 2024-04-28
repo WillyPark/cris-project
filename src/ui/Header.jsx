@@ -26,7 +26,7 @@ export const Header = () => {
                 </header>
             </div>
 
-            {/* <section className="palabras">
+            <section className="palabras">
                 <div className="fila">
                     <p className="header-palabras-uno">{language.header.words.uno}</p>
                     <p className="header-palabras-dos">{language.header.words.dos}</p>
@@ -63,7 +63,7 @@ export const Header = () => {
                     <p className="header-palabras-quince">{language.header.words.quince}</p>
                     <p className="header-palabras-dieciseis">{language.header.words.dieciseis}</p>
                 </div>
-            </section> */}
+            </section>
         </>
     )
 }
