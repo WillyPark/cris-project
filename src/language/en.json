@@ -195,5 +195,11 @@
             "Any comments"
         ],
         "button": "Send"
+    },
+    "validations": {
+        "all": "All fields are required",
+        "email": "The emails are not equal",
+        "date": "Date field is required",
+        "weekend": "On weekends there is no service"
     }
 }
