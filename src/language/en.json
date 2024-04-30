@@ -194,12 +194,24 @@
             "Comments",
             "Any comments"
         ],
-        "button": "Send"
+        "button": "Send",
+        "validations": {
+            "all": "All fields are required",
+            "email": "The emails are not equal",
+            "emailInvalid": "The email format is not correct",
+            "date": "Date field is required",
+            "weekend": "On weekends there is no service"
+        }
     },
-    "validations": {
-        "all": "All fields are required",
-        "email": "The emails are not equal",
-        "date": "Date field is required",
-        "weekend": "On weekends there is no service"
+    "alerts": {
+        "sending": {
+            "title": "Sending...",
+            "text": "This can take some seconds"
+        },
+        "error": "Something went wrong. Try it again later.",
+        "success": {
+            "title": "Success!",
+            "text": "The message was sent correctly, we will contact you as soon as possible."
+        }
     }
 }

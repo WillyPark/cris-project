@@ -1,20 +1,46 @@
 @use "./../base/mixins" as m;
 
-.swal2-container {
+.swal2-toast-my-container {
     top: 10.5rem !important;
     right: .5rem !important;
+    width: auto !important;
 
     @include m.tablet {
         top: 13rem !important;
-        width: auto !important;
+        height: inherit !important;
     }
 }
 
-.swal2-title {
+.swal2-toast-my-title {
     font-size: 1.7rem !important;
     margin-left: .5rem !important;
 }
 
-.swal2-icon {
+.swal2-toast-my-icon {
+    font-size: 1.5rem !important;
+}
+
+.swal2-my-title {
+    font-size: 3.6rem !important;
+    padding-top: 2rem !important;
+
+    @include m.tablet {
+        font-size: 4rem !important;
+    }
+}
+
+.swal2-my-icon {
+    font-size: 1.8rem !important;
+
+    @include m.tablet {
+        font-size: 2rem !important;
+    }
+}
+
+.swal2-my-html-container {
+    font-size: 2rem !important;
+}
+
+.swal2-my-confirm-button {
     font-size: 1.5rem !important;
 }

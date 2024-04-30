@@ -1,7 +1,7 @@
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { LanguageContext } from "../context/LanguageContext";
 import { useForm } from "../hooks/useForm";
-import { fecha, validaciones } from "../helpers";
+import { alertaLoader, alertaSwal2, fecha, validaciones } from "../helpers";
 
 export const Form = ({ tipo }) => {
 
@@ -20,18 +20,13 @@ export const Form = ({ tipo }) => {
 
     const [values, handleInputChange, reset] = useForm(initialState);
     const { company, email, emailConfirm, phone, date, comment } = values;
-    let nuevoLenguaje;
-
-    useEffect(() => {
-        nuevoLenguaje = language.validations
-    }, [language])
+    const lenguajeValidaciones = language.form.validations;
+    const lenguajeAlertas = language.alerts;
 
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        const validacion = validaciones(values, nuevoLenguaje);
-
-        return;
+        const validacion = validaciones(values, lenguajeValidaciones);
 
         if (validacion) {
             const formData = new FormData();
@@ -43,14 +38,33 @@ export const Form = ({ tipo }) => {
             formData.append("date", date);
             formData.append("comment", comment);
 
+            alertaLoader(lenguajeAlertas.sending.title, lenguajeAlertas.sending.text);
+
             fetch("http://localhost:5000/back/formulario.php", {
                 method: "POST",
                 body: formData
             })
                 .then(respuesta => respuesta.json())
                 .then(resultado => {
-                    console.log(resultado);
+                    if (resultado) {
+                        alertaSwal2(lenguajeAlertas.success.title, lenguajeAlertas.success.text, "success");
+                        return;
+                    }
+
+                    alertaSwal2("Error", lenguajeAlertas.error, "error");
+                    return;
                 })
+                .catch(error => {
+                    alertaSwal2("Error", lenguajeAlertas.error, "error");
+                })
+        }
+    }
+
+    const validarNumero = (e) => {
+        const key = e.which || e.keyCode;
+
+        if (isNaN(String.fromCharCode(key)) && key != 8 && key != 9 && key != 13 && key != 37 && key != 39 && key != 46) {
+            e.preventDefault();
         }
     }
 
@@ -75,7 +89,7 @@ export const Form = ({ tipo }) => {
 
             <div className="campo">
                 <label htmlFor="phone">{language.form.phone[0]}:</label>
-                <input type="tel" placeholder={language.form.phone[1]} id="phone" name="phone" value={phone} onChange={handleInputChange} />
+                <input onKeyDown={validarNumero} type="tel" placeholder={language.form.phone[1]} id="phone" name="phone" value={phone} onChange={handleInputChange} />
             </div>
 
             {

@@ -194,12 +194,24 @@
             "Comentarios",
             "Cualquier comentario"
         ],
-        "button": "Enviar"
+        "button": "Enviar",
+        "validations": {
+            "all": "Todos los campos son obligatorios",
+            "email": "Los correos electrónicos no coinciden",
+            "emailInvalid": "El formato del correo electrónico no es correcto",
+            "date": "El campo fecha es obligatorio",
+            "weekend": "Sábados y Domingos no hay servicio"
+        }
     },
-    "validations": {
-        "all": "Todos los campos son obligatorios",
-        "email": "Los correos electrónicos no coinciden",
-        "date": "El campo fecha es obligatorio",
-        "weekend": "Sábados y Domingos no hay servicio"
+    "alerts": {
+        "sending": {
+            "title": "Enviando...",
+            "text": "Esto puede demorar unos segundos"
+        },
+        "error": "Algo salió mal. Inténtelo de nuevo más tarde.",
+        "success": {
+            "title": "¡Éxito!",
+            "text": "El mensaje fue enviado correctamente, en breves nos comunicaremos con usted."
+        }
     }
 }

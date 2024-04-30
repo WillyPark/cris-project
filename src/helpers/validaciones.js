@@ -1,25 +1,29 @@
-import { alerta } from "./alertas";
+import { alertaToast } from "./alertas";
 
 export const validaciones = ({ tipo, company, email, emailConfirm, phone, date, comments }, lang) => {
-
     if (company.trim() == "" || email.trim() == "" || emailConfirm.trim() == "" || phone.trim() == "") {
-        alerta("error", lang.all);
+        alertaToast("error", lang.all);
+        return false;
+    }
+
+    if (email.includes("@") == false || email.includes(".") == false) {
+        alertaToast("error", lang.emailInvalid);
         return false;
     }
 
     if (email != emailConfirm) {
-        alerta("error", lang.email);
+        alertaToast("error", lang.email);
         return false;
     }
 
     if (tipo == 3) {
         if (date.trim() == "") {
-            alerta("error", lang.date);
+            alertaToast("error", lang.date);
             return false
         }
 
         if ([6, 0].includes(new Date(date).getUTCDay())) {
-            alerta("error", lang.weekend);
+            alertaToast("error", lang.weekend);
             return false;
         }
     }
